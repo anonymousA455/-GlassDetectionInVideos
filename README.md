@@ -19,7 +19,7 @@ Using the propagation-based techniques, we can convert GSDNet [^1] into a video 
 ## Active Learning
 In this portion of the project we aim to fine tune the baseline GSDNet4Video model already developed using active learning.  We draw heavily on the framework used in PixelPick [^3] which can increase segmentation performance by training on just a pixel labels per image.  We also explore a new query strategy based on flicker between frames as a mean of improving temporal stability.  Flicker can be defined an object changing classification from one frame to the next and can be seen as type of temporal uncertainty.  While there is evidence to suggest that training on flickering can effectively reduce the labelling burden, our findings are not conclusive. 
 
-## Repo Structure
+## Code
 
 Before running the files here, you should download the GSD dataset.  This can be found at https://jiaying.link/cvpr2021-gsd/.  To train our baseline, run the `train_model.py` in the GSDNet4Video directory.  This file takes the path to the directory containing your GSD dataset as an arugment.  Run this file like so
 
